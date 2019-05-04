@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css"> -->
-	<script src="face-apijs/dist/face-api.js"></script>
-	<script src="face-apijs/examples/examples-browser/public/js/commons.js"></script>
-	<script src="face-apijs/examples/examples-browser/public/js/drawing.js"></script>
-	<script src="face-apijs/examples/examples-browser/public/js/faceDetectionControls.js"></script>
+	<script src="faceapijs/dist/face-api.js"></script>
+	<script src="faceapijs/examples/examples-browser/public/js/commons.js"></script>
+	<script src="faceapijs/examples/examples-browser/public/js/drawing.js"></script>
+	<script src="faceapijs/examples/examples-browser/public/js/faceDetectionControls.js"></script>
     <style media="screen">
 
         * {
@@ -380,8 +380,8 @@
 		        // load face detection model
 		       await changeFaceDetector(TINY_FACE_DETECTOR)
 		        changeInputSize(160,0.25)
-				await faceapi.loadFaceLandmarkModel('face-apijs/weights')
-		        await faceapi.loadFaceRecognitionModel('face-apijs/weights')
+				await faceapi.loadFaceLandmarkModel('faceapijs/weights')
+		        await faceapi.loadFaceRecognitionModel('faceapijs/weights')
 		        // try to access users webcam and stream the images
 		        // to the video element
 		        // const stream = navigator.mediaDevices.getUserMedia({ video: {} })
